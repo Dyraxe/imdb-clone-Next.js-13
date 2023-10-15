@@ -3,12 +3,12 @@ import tmdb from "../assets/tmdb.svg";
 import Image from "next/image";
 function Footer() {
   return (
-    <div>
+    <div className="mx-auto bg-blue-100 px-4 pb-4 pt-2 dark:bg-[#0d253f]">
       <Link
         href="https://www.themoviedb.org/"
-        className="flex items-center gap-4 p-4"
+        className="flex items-center gap-4 "
       >
-        <span className="transition-transform delay-300  hover:translate-x-2">
+        <span className="text-sm font-semibold transition-transform delay-300 hover:translate-x-2">
           API provided by themoviedb &rarr;
         </span>
         <Image className=" max-w-[3rem]" src={tmdb} alt="the movie db logo" />
