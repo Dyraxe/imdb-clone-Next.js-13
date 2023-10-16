@@ -1,6 +1,5 @@
 function Results({ results }) {
   //   if (results.length === 0) return null;
-  console.log(results);
   return (
     <div>
       {results.map((result) => (

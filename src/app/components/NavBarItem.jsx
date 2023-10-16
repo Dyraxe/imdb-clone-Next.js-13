@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
 function NavBarItem({ title, param }) {
-  const genre = useSearchParams().get("genre");
+  const genre = useSearchParams().get("genre") || "fetchTrending";
   return (
     <div>
       <Link
