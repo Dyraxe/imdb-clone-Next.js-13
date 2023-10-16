@@ -1,10 +1,11 @@
+import NavBar from "./components/NavBar";
 import Results from "./components/Results";
 
 const API_KEY = process.env.API_KEY;
 export default async function Home({ searchParams }) {
   const genre = searchParams.genre || "fetchTrending";
   const res = await fetch(
-    `https://aapi.themoviedb.org/3/${
+    `https://api.themoviedb.org/3/${
       genre === "fetchTopTrending" ? "movie/top_rated" : "trending/all/week"
     }?api_key=${API_KEY}&language=en-US&page=1`,
     { next: { revalidate: 10800 } },
@@ -14,8 +15,10 @@ export default async function Home({ searchParams }) {
   }
   const data = await res.json();
   return (
-    <div className="">
+    <main>
+      <NavBar />
+
       <Results results={data.results} />
-    </div>
+    </main>
   );
 }
