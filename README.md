@@ -1,6 +1,6 @@
 # About
 
-IMDb clone done with Next.js 13 styled with tailwind
+A simple IMDb clone, for my personal study of next.js 13, styled with tailwind.
 
 **Features:**
 

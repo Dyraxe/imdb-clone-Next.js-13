@@ -15,10 +15,10 @@ export default async function Home({ searchParams }) {
   }
   const data = await res.json();
   return (
-    <main>
+    <>
       <NavBar />
 
       <Results results={data.results} />
-    </main>
+    </>
   );
 }
