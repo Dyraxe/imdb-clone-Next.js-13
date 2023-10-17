@@ -19,6 +19,7 @@ export default async function Home({ searchParams }) {
     <>
       <NavBar />
       <SearchBox />
+
       <Results results={data.results} />
     </>
   );
