@@ -1,3 +1,4 @@
+import SearchBox from "./SearchBox";
 import NavBar from "./components/NavBar";
 import Results from "./components/Results";
 
@@ -17,7 +18,7 @@ export default async function Home({ searchParams }) {
   return (
     <>
       <NavBar />
-
+      <SearchBox />
       <Results results={data.results} />
     </>
   );
