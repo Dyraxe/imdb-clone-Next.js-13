@@ -35,7 +35,7 @@ async function MovieDetail({ params: { id: movieId } }) {
             {movie.release_date || movie.first_air_date}
           </p>
           <p className="mb-3">
-            <span className="mr-1 font-semibold">Date Rating:</span>
+            <span className="mr-1 font-semibold">Rating:</span>
             {movie.vote_count}
           </p>
         </div>
